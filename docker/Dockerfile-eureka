@@ -1,7 +1,0 @@
-FROM java:8-jre
-MAINTAINER Jbzm lengleng <jxzzhengyi@126.com>
-
-ADD ./jar/eureka-server.jar /app/
-CMD ["java", "-Xmx200m", "-jar", "/app/eureka-server.jar"]
-
-EXPOSE 11010
