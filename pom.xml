@@ -60,4 +60,8 @@
         </repository>
     </repositories>
 
+    <build>
+        <defaultGoal>compile</defaultGoal>
+    </build>
+
 </project>
