@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>top.jbzm.cloud</groupId>
+    <groupId>com.ht.base.cloud</groupId>
     <artifactId>parent-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -12,8 +12,8 @@
     <description>Demo project for Spring Boot</description>
 
     <parent>
-        <groupId>top.jbzm</groupId>
-        <artifactId>parent-base</artifactId>
+        <groupId>com.ht.base</groupId>
+        <artifactId>parent-base-boot</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -21,15 +21,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>1.5.12.RELEASE</spring-boot.version>
-        <spring-cloud.version>Edgware.SR3</spring-cloud.version>
     </properties>
 
     <dependencies>
         <!--注册中心-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <artifactId>spring-cloud-starter-consul</artifactId>
         </dependency>
         <!--监控-->
         <dependency>
@@ -38,26 +36,13 @@
         </dependency>
     </dependencies>
 
-    <!-- 统一定义Spring Cloud 的版本号 -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Edgware.SR1</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <!-- 使用aliyun镜像 -->
     <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>aliyun</id>-->
-            <!--<name>aliyun</name>-->
-            <!--<url>http://maven.aliyun.com/nexus/content/groups/public</url>-->
-        <!--</repository>-->
+    <!--<repository>-->
+    <!--<id>aliyun</id>-->
+    <!--<name>aliyun</name>-->
+    <!--<url>http://maven.aliyun.com/nexus/content/groups/public</url>-->
+    <!--</repository>-->
     <!--</repositories>-->
 
     <build>
