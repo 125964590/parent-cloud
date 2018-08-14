@@ -5,7 +5,7 @@
 
     <groupId>com.ht.base.cloud</groupId>
     <artifactId>parent-cloud</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>parent-cloud</name>
